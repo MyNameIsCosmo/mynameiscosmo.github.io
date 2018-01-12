@@ -1,0 +1,7 @@
+# Jekyll
+_site/
+node_modules
+.sass-cache/
+.jekyll-metadata
+_drafts
+localtest_config.yml

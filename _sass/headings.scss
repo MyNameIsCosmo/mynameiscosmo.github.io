@@ -1,0 +1,74 @@
+
+/* Headers and stuff */
+
+h1, h2, h3, h4, h5, h6 {
+  color: #eee;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1.25;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(181, 232, 83, 0.1),
+               0 0 10px rgba(181, 232, 83, 0.1);
+  a {
+    color: #eee;
+    display: inline-block;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #fff;
+    background: none
+  }
+}
+
+h1 {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  padding-bottom:0.5rem;
+  border-bottom: 1px dashed #444;
+}
+
+h1:first-of-type {
+  border-bottom: 1px solid #444;
+  margin-top: 0;
+}
+
+h2 {
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
+}
+
+h3 {
+  margin-top: 1.15rem;
+  font-size: 1.1rem;
+}
+
+h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+#main_content {
+  h1:before {
+    content: "# ";
+  }
+
+  h2:before {
+    content: "## ";
+  }
+
+  h3:before {
+    content: "### ";
+  }
+
+  h4:before {
+    content: "#### ";
+  }
+
+  h5:before {
+    content: "##### ";
+  }
+
+  h6:before {
+    content: "###### ";
+  }
+}

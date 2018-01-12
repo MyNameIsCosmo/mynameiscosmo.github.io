@@ -1,0 +1,49 @@
+/* Header, <header>
+   header   - container
+   h1       - project name
+   h2       - project description
+*/
+
+footer {
+  background: #000;
+  width: 100%;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(181, 232, 83, 0.1),
+               0 0 10px rgba(181, 232, 83, 0.1);
+  h1 {
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    color: #eee;
+    letter-spacing: -1px;
+    -webkit-font-smoothing: antialiased;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+                 0 0 5px rgba(181, 232, 83, 0.1),
+                 0 0 10px rgba(181, 232, 83, 0.1);
+  }
+  .copyright {
+    font-size: 10px;
+  }
+
+  #info {
+    float: left;
+  }
+  #links {
+    float: right;
+  }
+  #links .btn {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+  }
+}
+

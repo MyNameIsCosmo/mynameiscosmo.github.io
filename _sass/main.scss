@@ -1,0 +1,175 @@
+//@import "rouge-base16-dark";
+@import "syntax";
+@import "header";
+@import "footer";
+@import "buttons";
+@import "headings";
+@import "flex";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-rendering: geometricPrecision;
+}
+
+html {
+  font-size: 14px;
+  font-family: "Menlo", "DejaVu Sans Mono", "Lucida Console", monospace;
+  line-height: 1.5;
+}
+
+@media(max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #080808;
+  color: #aaa;
+}
+
+/* General & 'Reset' Stuff */
+
+::selection {
+  background: #268bd2;
+}
+
+.container {
+  width: 90%;
+  max-width: 70rem;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+section {
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+
+li {
+  line-height: 1.4 ;
+}
+
+#main_content {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  padding-top: 1.5rem;
+}
+
+section img {
+  max-width: 100%
+}
+
+dt {
+  font-style: italic;
+  font-weight: bold;
+}
+
+dd {
+  padding-left: .25rem;
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+
+li {
+  margin-bottom: .1rem;
+}
+
+li > ul, li > ol {
+  padding-left: 2rem;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li:before {
+  content: "- ";
+}
+
+blockquote {
+  color: #aaa;
+  padding-left: 10px;
+  border-left: 1px dotted #666;
+}
+
+pre {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px dashed #444;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+table {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+th {
+  text-align: left;
+  border-bottom: 1px dashed #444;
+  padding: 4px 15px;
+}
+
+td {
+  padding: 4px 15px;
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px dashed #444;
+  color: #444;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+strong {
+  color: #ccc;
+  font-weight: bold;
+}
+
+em {
+  color: #eee;
+  font-style: italic;
+}
+
+
+/* Links
+   a, a:hover, a:visited
+*/
+
+a {
+  color: #d33682;
+}
+
+a:hover {
+  color: #eee;
+  background-color: #d33682;
+}
+
+/* Clearfix */
+
+.cf:before, .cf:after {
+  content:"";
+  display:table;
+}
+
+.cf:after {
+  clear:both;
+}
+
+.cf {
+  zoom:1;
+}

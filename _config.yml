@@ -1,0 +1,67 @@
+title: Markdown Console
+description: A Jekyll Theme spun off of the Hacker theme
+author: Cosmo Borsky
+show_downloads: true
+google_analytics:
+# theme: jekyll-theme-hacker
+
+url: "http://localhost"
+
+github:
+  username: MyNameIsCosmo
+  repository_url: https://github.com/MyNameIsCosmo/jekyll-theme-markdown-console
+
+# Links to include in menu navigation
+links:
+  - title: Home
+    url: /
+  - title: Maps
+    url: /maps
+  - title: About
+    url: /about
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+# Markdown Processors
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  hard_wrap:      false
+  footnote_nr:    1
+
+collections:
+  posts:
+    output:   true
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+sitemap:
+  filename: "/sitemap.xml"
+  exclude:
+    - "/atom.xml"
+    - "/feed.xml"
+    - "/feed/index.xml"
+  include_posts:
+    - "/index.html"
+  change_frequency_name: "change_frequency"
+  priority_name: "priority"
+
+plugins: 
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-mentions
+
+# exclude node related stuff
+exlucde: ['package.json', 'src', 'node_modules', 'template_post.em']
